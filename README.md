@@ -1,6 +1,5 @@
 # 💫 About Me:
-👋 Hello, I'm Alexander Gese!<br>🎯 Aspiring Computer Scientist | Lifelong Learner<br>🚀 Passionate about: AI, Robotics, Productivity Tools, and Research<br>🌱 Currently Learning: Advanced Algorithms, Machine Learning, and more!<br><br>🌟 Featured Projects:<br>🤖 AI Robot: A fully functional AI-powered robot built from scratch.<br>🛠️ Focus Mode Extension: Boost productivity by reducing digital distractions.<br>📧 Daily Dev News: Automated daily tech news directly to your inbox.<br>✍️ Research Papers: Exploring AI and computer science innovations.
-
+👋 Hello, I'm Alexander Gese!<br>🎯 Aspiring Computer Scientist | Lifelong Learner<br>🚀 Passionate about: AI, Robotics, Productivity Tools, and Research<br>🌱 Currently Learning: Advanced Algorithms, Machine Learning, and more!<br><br>🌟 Featured Projects:<br>🤖 AI Robot: A fully functional AI-powered robot built from scratch.<br>🛠️ Focus Mode Extension: Boost productivity by reducing digital distractions.<br>📧 Daily Dev News: Automated daily tech news directly to your inbox.<br>✍️ Research Papers: Exploring AI and computer science innovations
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/alexander-gese) 
