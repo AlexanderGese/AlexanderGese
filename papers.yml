@@ -1,0 +1,30 @@
+# .github/workflows/papers.yml
+# Pulls the newest arXiv cs.RO (robotics) + cs.LG (machine learning)
+# submissions into the BLOG-POST-LIST markers in README.md.
+#
+# Swap the feed_list for anything with an RSS/Atom feed — your own blog,
+# a specific arXiv category, Hacker News, a newsletter archive.
+name: Reading Pile
+
+on:
+  schedule:
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://rss.arxiv.org/rss/cs.RO,https://rss.arxiv.org/rss/cs.LG"
+          max_post_count: 6
+          template: "- [$title]($url) &nbsp;<sub>$newline</sub>"
+          date_format: "mmm d"
+          commit_message: "chore: refresh reading pile"
+          disable_sort: false

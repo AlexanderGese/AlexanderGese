@@ -1,0 +1,25 @@
+# .github/workflows/activity.yml
+# Writes your last 5 public actions between the
+# <!--START_SECTION:activity--> markers in README.md.
+name: Recent Activity
+
+on:
+  schedule:
+    - cron: "40 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          COMMIT_MSG: "chore: refresh recent activity"
+          MAX_LINES: 5
